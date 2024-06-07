@@ -1,4 +1,4 @@
-# Comment automatiser la gestion des erreurs sur Express ?
+# Comment automatiser la gestion des erreurs sur Express
 
 J'ai créé ce repository pour un poste LinkedIn expliquant comment gérer les erreurs sur une application Express.
 
@@ -11,7 +11,7 @@ J'ai créé ce repository pour un poste LinkedIn expliquant comment gérer les e
 
 - Créer un fichier .env à la racine avec le contenu du fichier .env.example
 
-``npm run dev``
+- Exécuter ``npm run dev``
 
 ## Générer une erreur
 ``http://localhost:3000/`` : passer le query param error avec la valeur 401, 404 ou 500 pour déclencher une erreur.
