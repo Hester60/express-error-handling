@@ -18,13 +18,12 @@ router.get('/', asyncWrapper(async (req: Request, res: Response): Promise<Respon
         return res.status(200).json({message: 'Please provide an error number between 404, 401, 500'});
     }
 
-    console.log(errorNb);
     // All these errors will be handled by the error handler middleware
     switch (errorNb) {
         case 401:
             throw Unauthorized('Unauthorized error');
         case 404:
-            throw NotFound('Not found error');
+            throw NotFound(`Post with id 31 not found.`);
         default:
             throw new Error('Internal/Unexpected Server Error');
     }
